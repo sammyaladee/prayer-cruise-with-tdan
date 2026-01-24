@@ -26,7 +26,7 @@ export default function PrayerSupportPage() {
       // Replace this URL with your Google Apps Script Web App URL
       const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
       
-      const response = await fetch(GOOGLE_SCRIPT_URL, {
+      const _response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
         headers: {
