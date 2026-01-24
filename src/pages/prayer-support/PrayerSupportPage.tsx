@@ -9,9 +9,9 @@ export default function PrayerSupportPage() {
     category: "General"
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState('idle');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -23,8 +23,7 @@ export default function PrayerSupportPage() {
     setSubmitStatus('idle');
 
     try {
-      // Replace this URL with your Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs3N_x-o0X_LnkmpUD52WQfnu87TFgXhSabZX5VowysVgiJjvypuDei3VemnUoevRf/exec';
       
       await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
@@ -257,7 +256,7 @@ export default function PrayerSupportPage() {
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>8:00 PM WAT / 8:00 PM BST</span>
+                    <span>8:00 PM WAT / 7:00 PM BST</span>
                   </div>
                   <p className="text-sm text-gray-600 mt-4">
                     Join us live every Friday for Prayer Cruise where we pray together as a community.

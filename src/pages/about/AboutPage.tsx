@@ -1,3 +1,5 @@
+import leaderImage from "../../assets/FB_IMG_1735994574593.jpg";
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
@@ -9,7 +11,7 @@ export default function AboutPage() {
           </h1>
           <div className="h-1 w-24 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-            Raising intentional young minds through prayer, fasting & God's Word.
+            Raising intentional believers through prayer, fasting & God's Word.
           </p>
         </div>
       </section>
@@ -20,14 +22,13 @@ export default function AboutPage() {
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
-              Prayer Cruise is a dynamic fellowship dedicated to empowering young believers through intentional prayer, 
+              Prayer Cruise is a dynamic fellowship dedicated to empowering believers through intentional prayer, 
               disciplined fasting, and deep engagement with God's Word. We believe in cultivating a generation that is 
               spiritually grounded, purpose-driven, and passionate about their relationship with God.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Every Friday at 8PM, we gather together to seek God's face, intercede for our generation, and grow in 
-              spiritual maturity. Our fellowship is a safe space where young people can connect with God and one another 
-              in meaningful ways.
+              We are looking to raise young minds who are intentional about God, godliness and 
+              God's kingdom through effective prayer life, fasting, and the word of God.
             </p>
           </div>
         </div>
@@ -84,24 +85,26 @@ export default function AboutPage() {
             <div className="md:flex">
               <div className="md:w-2/5 bg-gradient-to-br from-blue-600 to-orange-500 p-8 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
+                  <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg">
+                    <img 
+                      src={leaderImage} 
+                      alt="Rev. Oyetoki Oluwatobi Daniel" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold">Rev. Oyetoki Oluwatobi Daniel</h3>
-                  <p className="text-blue-100 mt-2">Lead Pastor</p>
+                  <p className="text-blue-100 mt-2">Leader</p>
                 </div>
               </div>
               <div className="md:w-3/5 p-8 md:p-12">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Leadership</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   Under the guidance of Rev. Oyetoki Oluwatobi Daniel, Prayer Cruise has become a beacon of hope 
-                  and spiritual growth for young believers seeking to deepen their relationship with God.
+                  and spiritual growth for believers seeking to deepen their relationship with God.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   With a heart for the next generation and a passion for prayer, our leadership team is committed 
-                  to creating an environment where young minds can flourish spiritually.
+                  to creating an environment where believers can flourish spiritually.
                 </p>
               </div>
             </div>
@@ -115,7 +118,7 @@ export default function AboutPage() {
           <div className="bg-gradient-to-r from-blue-600 to-orange-500 rounded-2xl shadow-xl p-8 md:p-12 text-white">
             <h2 className="text-3xl font-bold mb-4">Join Us Every Friday</h2>
             <p className="text-lg mb-6 text-blue-50">
-              Be part of a vibrant community of young believers passionate about prayer and God's presence.
+              Be part of a vibrant community of believers passionate about prayer and God's presence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

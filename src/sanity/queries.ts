@@ -11,13 +11,14 @@ export const newsQuery = `*[_type == "newsPost"] | order(publishedAt desc) {
   }
 }`;
 
-export const livestreamQuery = `*[_type == "livestream"][0]{
+export const livestreamQuery = `*[_type == "livestream"] | order(publishedAt desc) {
   _id,
   youtubeUrl,
   facebookUrl,
   isLive,
   title,
-  scheduledTime
+  scheduledTime,
+  publishedAt
 }`;
 
 export const exhortationQuery = `*[_type == "exhortation"] | order(publishedAt desc) {
