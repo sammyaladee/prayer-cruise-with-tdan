@@ -27,3 +27,19 @@ export const exhortationQuery = `*[_type == "exhortation"] | order(publishedAt d
   body,
   publishedAt
 }`;
+
+export const singleNewsQuery = `
+  *[_type == "newsPost" && slug.current == $slug][0] {
+    _id,
+    title,
+    slug,
+    excerpt,
+    publishedAt,
+    mainImage {
+      asset->{
+        url
+      }
+    }
+  }
+`;
+
