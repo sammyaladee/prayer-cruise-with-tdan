@@ -2,7 +2,7 @@ import image from "../../../assets/20250323_203222.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center px-4 sm:px-6 lg:px-12 bg-gradient-to-br from-blue-50 via-white to-orange-50">
+    <section className="min-h-screen flex items-center px-4 sm:px-6 sm:pb-8 lg:px-12 bg-gradient-to-br from-blue-50 via-white to-orange-50">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
