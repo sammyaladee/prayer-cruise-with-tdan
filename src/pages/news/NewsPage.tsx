@@ -51,6 +51,9 @@ export default function NewsPage() {
   return (
     <main className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-12 py-12">
       {/* Page Header */}
+      <section className="text-center mb-12 border rounded-md py-2 bg bg-gradient-to-r from-blue-600 to-orange-500 text-white">
+        <h1 className="text-4xl font-bold">Latest News</h1>
+      </section>
 
       {/* News Grid */}
       <section className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
