@@ -51,13 +51,6 @@ export default function NewsPage() {
   return (
     <main className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-12 py-12">
       {/* Page Header */}
-      <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Latest News</h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Stay updated with the latest happenings, announcements, and events
-          from Prayer Cruise.
-        </p>
-      </section>
 
       {/* News Grid */}
       <section className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
