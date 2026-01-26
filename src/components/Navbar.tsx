@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import image from "../assets/PC-Logo (1).png";
+import logo from "../assets/PC-Logo (1).png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={image} alt="PC Fellowship Logo" className="h-12 w-auto" />
+            <img src={logo} alt="PC Fellowship Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,8 +53,14 @@ export default function Navbar() {
               Contact
             </Link>
             <Link 
-              to="/prayer-support" 
+              to="/testimonies" 
               className="px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-orange-500 hover:text-white transition-all duration-200"
+            >
+              Testimonies
+            </Link>
+            <Link 
+              to="/prayer-support" 
+              className="px-6 py-2 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition-all duration-200"
             >
               Prayer Support
             </Link>
@@ -63,7 +69,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
+            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:text-orange-300 transition-colors"
           >
             <span className="sr-only">Open main menu</span>
             {!isOpen ? (
@@ -124,6 +130,13 @@ export default function Navbar() {
               className="block px-3 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-50 font-medium transition-colors"
             >
               Contact
+            </Link>
+            <Link
+              to="/testimonies"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 mt-2 rounded-md bg-white border-2 border-blue-600 text-blue-600 font-semibold text-center hover:bg-blue-50 transition-all"
+            >
+              Testimonies
             </Link>
             <Link
               to="/prayer-support"

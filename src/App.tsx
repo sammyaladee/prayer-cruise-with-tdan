@@ -10,6 +10,7 @@ import AboutPage from "./pages/about/AboutPage";
 import ContactPage from "./pages/contact/ContactPage";
 import PrayerSupportPage from "./pages/prayer-support/PrayerSupportPage";
 import NewsDetailPage from "./pages/news/NewsDetailPage";
+import TestimoniesPage from "./pages/testimonies/TestimoniesPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/prayer-support" element={<PrayerSupportPage />} />
+          <Route path="/testimonies" element={<TestimoniesPage />} />
           <Route path="/news/:slug" element={<NewsDetailPage />} />
 
         </Routes>
