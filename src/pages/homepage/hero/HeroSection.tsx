@@ -1,4 +1,4 @@
-import image from "../../../assets/20250323_203222.jpg";
+import image from "../../../assets/20250323_203222.webp";
 
 export default function HeroSection() {
   return (
