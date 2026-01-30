@@ -26,10 +26,22 @@ export default function NewsPage() {
     });
   }, []);
 
+  // Function to get preview text (150 characters)
+  const getPreview = (text: string) => {
+    const maxChars = 150;
+    if (text.length <= maxChars) {
+      return text;
+    }
+    return text.slice(0, maxChars).trim() + "...";
+  };
+
   if (loading) {
     return (
       <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-orange-50">
-        <p className="text-gray-600">Loading news...</p>
+        <div className="text-center space-y-4">
+          <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <p className="text-gray-600">Loading news...</p>
+        </div>
       </main>
     );
   }
@@ -88,8 +100,8 @@ export default function NewsPage() {
                 <h2 className="text-xl font-semibold text-gray-900">
                   {post.title}
                 </h2>
-                <p className="text-gray-600 text-sm">
-                  {post.excerpt}
+                <p className="text-gray-600 text-sm line-clamp-3">
+                  {getPreview(post.excerpt)}
                 </p>
                 <a
                   href={`/news/${post.slug.current}`}
