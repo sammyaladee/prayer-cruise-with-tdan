@@ -17,7 +17,7 @@ export default function SEO({
   url = "https://prayercruisewithtdan.org",
   type = "website"
 }: SEOProps) {
-  const fullTitle = `${title} | Prayer Cruise with TDAN`;
+  const fullTitle = ` PrayerCruiseWithTDAN | ${title}`;
 
   return (
     <Helmet>
