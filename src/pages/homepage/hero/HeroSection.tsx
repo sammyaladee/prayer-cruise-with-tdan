@@ -32,7 +32,7 @@ export default function HeroSection() {
               <img
                 src={image}
                 alt="Prayer Cruise with Rev. Oyetoki Oluwatobi Daniel"
-                className="relative rounded-2xl shadow-2xl w-[28rem] h-[32rem] object-cover border-4 border-white"
+                className="hero-image relative rounded-2xl shadow-2xl w-[28rem] h-[32rem] object-cover border-4 border-white"
               />
             </div>
           </div>
