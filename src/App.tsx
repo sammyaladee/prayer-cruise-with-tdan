@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
@@ -19,11 +20,9 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
-      // Add a small delay for smooth transition
       setTimeout(() => setIsLoaded(true), 300);
     };
 
-    // Check if already loaded
     if (document.readyState === 'complete') {
       handleLoad();
     } else {
@@ -34,11 +33,9 @@ function App() {
   }, []);
 
   return (
-    <>
-      {/* Loading Screen */}
+    <HelmetProvider>
       {!isLoaded && <LoadingScreen />}
 
-      {/* Main App */}
       <div className={`transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <LivestreamProvider>
           <Router>
@@ -60,7 +57,7 @@ function App() {
           </Router>
         </LivestreamProvider>
       </div>
-    </>
+    </HelmetProvider>
   );
 }
 

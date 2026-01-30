@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { sanityClient } from "../../sanity/client";
 import { singleNewsQuery } from "../../sanity/queries";
+import SEO from "../../components/SEO";
+
 
 type NewsPost = {
   _id: string;
@@ -56,6 +58,14 @@ export default function NewsDetailPage() {
   }
 
   return (
+    <>
+    <SEO
+        title={post.title}
+        description={post.excerpt.slice(0, 155)}
+        image={post.mainImage?.asset?.url}
+        url={`https://prayercruisewithtdan.org/news/${slug}`}
+        type="article"
+      />
     <main className="min-h-screen p-6 max-w-4xl mx-auto">
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
         {/* Image */}
@@ -105,5 +115,6 @@ export default function NewsDetailPage() {
         </div>
       </div>
     </main>
+    </>
   );
 }

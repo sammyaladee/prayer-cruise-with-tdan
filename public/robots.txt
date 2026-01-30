@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://User-agent: *
+Allow: /
+
+Sitemap: https://prayercruisewithtdan.org/sitemap.xml/sitemap.xml

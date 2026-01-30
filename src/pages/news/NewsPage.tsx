@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { sanityClient } from "../../sanity/client";
 import { newsQuery } from "../../sanity/queries";
+import SEO from "../../components/SEO";
 
 type NewsPost = {
   _id: string;
@@ -61,6 +62,13 @@ export default function NewsPage() {
   }
 
   return (
+    <>
+    <SEO
+        title="Latest News"
+        description="Stay updated with the latest news, announcements, and updates from Prayer Cruise with TDAN."
+        keywords="prayer cruise news, TDAN updates, christian ministry news, church announcements"
+        url="https://prayercruisewithtdan.org/news"
+      />
     <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
       {/* Hero Section */}
       <section className="pt-8 px-4 sm:px-6 lg:px-8">
@@ -115,5 +123,6 @@ export default function NewsPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
