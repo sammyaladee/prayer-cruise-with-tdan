@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 import HomePage from "./pages/homepage/HomePage";
 import NewsPage from "./pages/news/NewsPage";
 import ExhortationPage from "./pages/exhortation/ExhortationPage";
 import LivestreamPage from "./pages/livestream/LivestreamPage";
+import { LivestreamProvider } from "./components/Livestreamcontext";
 import AboutPage from "./pages/about/AboutPage";
 import ContactPage from "./pages/contact/ContactPage";
 import PrayerSupportPage from "./pages/prayer-support/PrayerSupportPage";
@@ -14,6 +14,7 @@ import TestimoniesPage from "./pages/testimonies/TestimoniesPage";
 
 function App() {
   return (
+    <LivestreamProvider>
     <Router>
       <Navbar />
       <main className="min-h-screen">
@@ -32,6 +33,7 @@ function App() {
       </main>
       <Footer />
     </Router>
+    </LivestreamProvider>
   );
 }
 

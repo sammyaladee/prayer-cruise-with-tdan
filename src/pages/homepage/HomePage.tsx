@@ -1,15 +1,19 @@
 import HeroSection from "./hero/HeroSection";
-import LivestreamPage from "../livestream/LivestreamPage";
+import LiveStream from "../livestream/LiveStream";
 import NewsPage from "../news/NewsPage";
 import ContactPage from "../contact/ContactPage";
+import { useLivestream } from "../../components/Livestreamcontext";
 
 export default function HomePage() {
+  // Get live streams from context - no need to fetch!
+  const { liveStreams } = useLivestream();
+
   return (
     <main className="min-h-screen">
       <HeroSection />
       <NewsPage />
-      <LivestreamPage />
-      <ContactPage/>
+      <LiveStream streams={liveStreams} />
+      <ContactPage />
     </main>
   );
 }

@@ -69,7 +69,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:text-orange-300 transition-colors"
+            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-orange hover:text-orange-300 transition-colors"
           >
             <span className="sr-only">Open main menu</span>
             {!isOpen ? (

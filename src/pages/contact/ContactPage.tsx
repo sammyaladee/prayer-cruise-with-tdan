@@ -23,7 +23,7 @@ export default function ContactPage() {
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
     
-    const mailtoLink = `mailto:tobidaniels006@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:prayercruisetv@gmail.com?subject=${subject}&body=${body}`;
     
     window.location.href = mailtoLink;
   };

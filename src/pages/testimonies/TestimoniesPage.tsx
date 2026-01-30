@@ -22,7 +22,7 @@ export default function TestimoniesPage() {
     setSubmitStatus('idle');
 
     try {
-      const EMAIL_ENDPOINT = 'https://formsubmit.co/sammyalade4jesus@gmail.com';
+      const EMAIL_ENDPOINT = 'https://formsubmit.co/prayercruisetv@gmail.com';
 
       const formDataToSend = new FormData();
       formDataToSend.append('name', formData.name);
