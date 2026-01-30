@@ -13,7 +13,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-              Raising intentional young minds through <br />
+              Raising Intentional Believers through <br />
               Prayer, Fasting & God's Word.
             </p>
 

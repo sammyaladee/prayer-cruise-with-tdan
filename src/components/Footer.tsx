@@ -70,7 +70,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://facebook.com/prayercruisewithtdan"
+                href="https://facebook.com/tobid3"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all"
@@ -80,7 +80,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/tdaniel_official_"
+                href="https://www.instagram.com/prayercruisewithtdan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all"
@@ -90,7 +90,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://tiktok.com/@tdaniel_official"
+                href="https://www.tiktok.com/@prayercruisewithtdan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-all"
